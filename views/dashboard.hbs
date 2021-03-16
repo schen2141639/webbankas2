@@ -1,0 +1,28 @@
+<h1 class="mt-4">Bank Account</h1>
+<p class="lead mb-3">Welcome {{user.username}}</p>
+<p>Account Number: {{account.accountNumber}}</p>
+<p>Account Type: {{account.accountType}}</p>
+
+<input type="text" placeholder="Account Number" id="accNumber">
+ <input type="radio" id="balance" name="action" value="balance">
+  <label for="balance">Balance</label>
+  <input type="radio" id="deposit" name="action" value="deposit">
+  <label for="deposit">Deposit</label>
+  <button id="submit" onclick="replaceLocation()">Submit</button>
+
+<a href="/auth/logout" class="btn btn-secondary" title="logout">{{user.username}}</a>
+<script>
+function replaceLocation() {
+     const val = document.getElementById("accNumber").value;
+     if (!val) {
+         return;
+     }
+     console.log(val, "^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^")
+    if (document.getElementById('balance').checked) {
+        window.location.href = `/balance?acc=${val}`
+    } else {
+        window.location.href = `/deposit?acc=${val}`
+    }
+}
+
+</script>

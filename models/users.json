@@ -1,0 +1,17 @@
+{
+  "users": [
+    {
+      "username": "asd@123.com",
+      "password": "asd123!",
+      "accountNumber": "0000001"
+    },
+    {
+      "username": "qwe@123.com",
+      "password": "qwe123!"
+    },
+    {
+      "username": zxc@123.com",
+      "password": zxc123!"
+    }
+  ]
+}
