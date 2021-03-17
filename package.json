@@ -1,18 +1,23 @@
 {
-  "name": "si-chen214-ass2",
+  "name": "passportdemo",
   "version": "1.0.0",
-  "description": "webbank2",
-  "main": "server.js",
-  "dependencies": {
-    "express-handlebars": "^5.2.1",
-    "express": "^4.17.1",
-    "passport-github": "^1.1.0"
-  },
-  "devDependencies": {},
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
+  "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.0",
+    "express-handlebars": "^5.2.1",
+    "express-layouts": "^1.0.0",
+    "express-session": "^1.17.1",
+    "passport": "^0.4.1",
+    "passport-github": "^1.1.0",
+    "passport-local": "^1.0.0"
+  }
 }
